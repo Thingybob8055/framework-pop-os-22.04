@@ -11,17 +11,17 @@ But if anyone notices an issue please raise an issue post, maybe it can be usefu
 
 The script does the following:
 
-- Update and upgrade via `apt`
-- Brightness keys fix
-- Power saving for SSD for better suspend battery life
-- Change from PSR2 (default) to PSR1 to fix potential flickering issue
-- Remove the deprecated `xserver-xorg-video-intel` driver
-- Asks if you want to use X11 with reduced resolution
+- Update and upgrade via `apt`.
+- Brightness keys fix.
+- Power saving for SSD for better suspend battery life.
+- Change from PSR2 (default) to PSR1 to fix potential flickering issue.
+- Remove the deprecated `xserver-xorg-video-intel` driver.
+- Asks if you want to use X11 with reduced resolution:
     - If **yes** it will add resolution 1692x1128 (a resolution used on some surface laptops for 100% scale), this will allow to comfortably use 100% scaling which works well on X11 (fractional scaling causes bad screen tearing), albeit at a reduced resolution. This is my preferred way of using Pop!_OS (as I personally found Pop!_OS to be a better overall experience on X11), as It's not too bad on the reduced resolution, but understandable if this is not a preferred option.
-        - Change to this resolution in system settings
+        - Change to this resolution in system settings.
     - If **no**, it will make modifications to the file in `/etc/gdm3/custom.conf` to enable Wayland. Log out and back in or reboot.
         - Select Wayland in the GDM login screen. 
-- Install fingerprint drivers
+- Install fingerprint drivers.
     - **Note:** You can set fingerprint in System Settings after this and will work fine with logging in and out. To use this in terminal for sudo commands, please see the last section.
 
 ## To use:
@@ -40,13 +40,12 @@ chmod +x pop-script.sh
 
 Enter `sudo` password where necessary.
 
+**Note:** Please reboot after the script finishes.
+
 ## What to do when it asks for PAM Update
 
 ![](/images/pam.png)
 
 - Up and Down arrow to select
-- Space to check `fingerprint authentication`
-- Tab to select `ok` and then space again to exit
-
-The script will automatically cause a reboot after this step is done.
-
+- Space to check `Fingerprint Authentication`
+- Tab to select `Ok` and then space again to exit
