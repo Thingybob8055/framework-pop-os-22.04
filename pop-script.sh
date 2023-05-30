@@ -15,4 +15,4 @@ case ${answer:0:1} in
     ;;
 esac
 
-sudo apt install fprintd libpam-fprintd && echo -e "\e[31m[INFO] Please reboot!\nIf you selected not to use X11, select Wayland when at the login prompt, and use fractional scaling at 150% for the best experience\e[0m"
+sudo apt install fprintd libpam-fprintd && echo -e "\e[31m[INFO] Please reboot! \nIf you selected not to use X11, select Wayland when at the login prompt, and use fractional scaling at 150% for the best experience\e[0m"
