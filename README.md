@@ -42,7 +42,7 @@ Enter `sudo` password where necessary.
 
 **Note:** Please reboot after the script finishes.
 
-## Enabling Fingerprint for sudo
+## Enabling fingerprint for sudo
 
 ![](/images/pam.png)
 
