@@ -42,10 +42,11 @@ Enter `sudo` password where necessary.
 
 **Note:** Please reboot after the script finishes.
 
-## What to do when it asks for PAM Update
+## Enabling Fingerprint for sudo
 
 ![](/images/pam.png)
 
+- In terminal, run `sudo pam-auth-update`
 - Up and Down arrow to select
 - Space to check `Fingerprint Authentication`
 - Tab to select `Ok` and then space again to exit
