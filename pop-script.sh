@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 sudo apt update && sudo apt upgrade -y && echo "options snd-hda-intel model=dell-headset-multi" | sudo tee -a /etc/modprobe.d/alsa-base.conf && echo "blacklist hid_sensor_hub" | sudo tee -a /etc/modprobe.d/framework-als-blacklist.conf && sudo update-initramfs -u && sudo kernelstub -a nvme.noacpi=1 && sudo kernelstub -a i915.enable_psr=1 && sudo apt remove xserver-xorg-video-intel
 
